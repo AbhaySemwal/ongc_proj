@@ -1,4 +1,4 @@
-import Patient from "../../../../models/Patient";
+import Patient from "../../../models/Patient";
 import connect from "../../../../utils/db";
 import { NextResponse } from "next/server";
 

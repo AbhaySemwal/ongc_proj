@@ -55,7 +55,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col justify-center px-5">
-      <h1 className="text-center py-5 text-lg md:text-2xl font-semibold">Patients' Data</h1>
+      <h1 className="text-center py-5 text-lg md:text-2xl font-semibold">Patients&apos; Data</h1>
       <div className="border-[1px] border-gray-500 text-[8px] md:text-base">
         <div className="grid grid-cols-5 justify-center">
           <div className="border-[1px] border-gray-500 p-1">Index</div>
