@@ -72,13 +72,13 @@ export default function Home() {
           <div className="border-[1px] border-gray-500 p-1">{pt.gender}</div>
           <div className="border-[1px] border-gray-500 p-1">{pt.contact}</div>
         </div>))}
-        <form onSubmit={handleSubmit} className="grid grid-cols-5">
+        <form onSubmit={handleSubmit} className="relative grid grid-cols-5">
           <div className="border-[1px] border-gray-500 p-1">{patient.length+1}</div>
           <input className="bg-transparent outline-none border-[1px] border-gray-500 p-1" placeholder="Name"></input>
           <input className="bg-transparent outline-none border-[1px] border-gray-500 p-1" placeholder="DOB"></input>
           <input className="bg-transparent outline-none border-[1px] border-gray-500 p-1" placeholder="Gender"></input>
           <input className="bg-transparent outline-none border-[1px] border-gray-500 p-1" placeholder="Contact"></input>
-          <button hidden>Submit</button>
+          <button className="absolute -bottom-6 md:-bottom-10 right-0 bg-slate-600 p-1 px-2 rounded-md" >Submit</button>
         </form>
       </div>
     </div>
