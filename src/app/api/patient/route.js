@@ -3,13 +3,14 @@ import connect from "../../../../utils/db";
 import { NextResponse } from "next/server";
 
 export const POST =async(request)=>{
-    const {name,dob,gender,contact}=await request.json();
+    const {name,dob,gender,contact,test}=await request.json();
     await connect();
     const newPatient=new Patient({
         name,
         dob,
         gender,
-        contact
+        contact,
+        test
     })
 
     try{
