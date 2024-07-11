@@ -129,12 +129,12 @@ export default function Home() {
         </div>
         {patient?.map((pt, index) => (
           <div key={index} className="grid grid-cols-6">
-            <div className="border-[1px] border-gray-500 p-1">{index + 1}</div>
-            <div className="border-[1px] border-gray-500 p-1">{pt.name}</div>
-            <div className="border-[1px] border-gray-500 p-1">{pt.dob}</div>
-            <div className="border-[1px] border-gray-500 p-1">{pt.gender}</div>
-            <div className="border-[1px] border-gray-500 p-1">{pt.contact}</div>
-            <div className="border-[1px] border-gray-500 p-1">{pt.test}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{index + 1}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{pt.name}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{pt.dob}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{pt.gender}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{pt.contact}</div>
+            <div className="border-[1px] border-gray-500 p-1 overflow-hidden">{pt.test}</div>
           </div>
         ))}
         <form onSubmit={handleSubmit} className="relative grid grid-cols-6">
