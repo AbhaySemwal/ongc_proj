@@ -2,35 +2,32 @@ import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
 
-const patientSchema = new Schema(
+const appointmentSchema = new Schema(
   {
-    name: {
+    patient: {
+      type: Schema.Types.ObjectId,
+      ref: 'Patient',
+      required: true,
+    },
+    doctor: {
+      type: Schema.Types.ObjectId,
+      ref: 'Doctor',
+      required: true,
+    },
+    date: {
       type: String,
       required: true,
     },
-    dob: {
+    time: {
       type: String,
       required: true,
     },
-    gender: {
+    card: {
       type: String,
       required: true,
-    },
-    phone: {
-      type: String,
-      required: true,
-    },
-    test: {
-      type: String,
-      required: true,
-    },
-    cpf: {
-      type: String,
-      unique: true,
-      required: true,
-    },
-    password: {
-      type: String,
+    },  
+    tokenNumber: {
+      type: Number,
       required: true,
     },
   },
@@ -38,4 +35,4 @@ const patientSchema = new Schema(
 );
 
 mongoose.models = {};
-export default mongoose.model('Patient', patientSchema);
+export default mongoose.model('Appointment', appointmentSchema);
