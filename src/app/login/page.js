@@ -146,7 +146,7 @@ const LoginPage = () => {
         )}
       </form>
       <p>
-        Don't have an account? <Link href="/register">Register</Link>
+        Don&apos;t have an account? <Link href="/register">Register</Link>
       </p>
     </div>
   );
